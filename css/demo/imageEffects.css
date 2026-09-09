@@ -1,0 +1,27 @@
+.imgFilterBw {
+    filter: grayscale(100%);
+}
+
+.imgFilterSepia {
+    filter: sepia(100%);
+}
+
+.imgFilterBlur {
+    filter: blur(5px);
+}
+
+.btnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btnGroup button {
+    flex-basis: calc(25% - 10px);
+}
+
+@media (max-width: 480px) {
+    .btnGroup button {
+        flex-basis: calc(50% - 10px);
+    }
+}

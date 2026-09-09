@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codify</title>
+    <meta name="author" content="Furrer Esther">
+	<link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/themes.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/hamburgerMenu.css">
+	<link rel="stylesheet" href="../css/themeSwitcher.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-light.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.css">
+
+	<link rel="stylesheet" href="../css/demo/imageEffects.css">
+</head>
+<body>
+    <div class="container">
+        <header id="navigation">
+			<div ref="burgerVue" id="navContainer">
+				<div @click="burgerMenuActive" id="icons"></div>
+				<nav class="navbar">
+					<ul class="navLinks">
+						<li><a data-i18n="navIndex" href="../index.html">Codify</a></li>
+						<li><a id="currentNav" data-i18n="navImages" href="./images.html">Images</a></li>
+						<li><a data-i18n="navAnimations" href="./animations.html">Animations</a></li>
+						<li><a data-i18n="navTheme" href="./theming.html">Light And Dark Theme</a></li>
+						<li><a data-i18n="navHamburgerMenu" href="./hamburger.html">Hamburger Menu</a></li>
+						<li><a data-i18n="navMultiLang" href="./multilingual.html">Multilingual Website</a></li>
+					</ul>
+				</nav>
+				<button type="button" id="darkModeToggle" class="darkModeToggle">
+					<img id="iconTheme" width="40" height="40" src="../img/icons/sunMin.svg" alt="Sun">
+				</button>
+			</div>
+        </header>
+
+        <main>
+			<div class="quoteDiv primaryDiv">
+				<blockquote data-i18n="mainQuote">
+					<q>We all know the famous adage from an unknown author
+						"a picture is worth a thousand words".
+						Using images wisely can enhance your website tremendously,
+						increase user acceptance,
+						and ultimately broaden your global online presence.
+					</q>
+				</blockquote>
+			</div>
+            <div class="articleDiv secondaryDiv">
+				<article>
+					<header>
+						<h1 data-i18n="headerHeadingH1">Why is the choice of images important?</h1>
+						<div class="headerInfo">
+							<div class="HeaderAuthorInfo">
+								<p data-i18n="headerAuthorInfoP">Written by</p>
+								<a data-i18n="headerAuthorInfoLink" href="mailto:esther.furrer@etu.unistra.fr" rel="author">FURRER Esther</a>
+							</div>
+							<div class="headerLastUpdated">
+								<svg class="icon" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" 
+									viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+									<path stroke-linecap="round" stroke-linejoin="round" 
+									d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+								</svg>
+								<p data-i18n="headerLastUpdatedP">Last updated on the</p>
+								<time data-i18n="headerLastUpdatedTime" datetime="2024-01-02 20:00">2nd January</time>
+							</div>
+						</div>
+						<p data-i18n="headerIntroP">A few tips on using images wisely</p>
+					</header>
+					<section class="content">
+						<h2 data-i18n="articleContentHeadingH2">There is no perfect way of choosing</h2>
+						<p data-i18n="articleContentPA">
+							If there is one thing you should remember about choosing images, this is it: there is no good or bad rule to follow. There are only common sense and psychological principles you should follow. While there are multiple factors that could be taken into account, here are two main criterias you should think about.
+						</p>
+
+						<h3 data-i18n="articleContentHeadingH3A">The context</h3>
+						<p data-i18n="articleContentPB">
+						Your website should adapt a user interface design that is both practical and realistic. The context therefore can apply to several aspects: it depends on the content of your website, on your audience, on the product you are selling, on the services you provide... and so on.</p>
+
+						<h3 data-i18n="articleContentHeadingH3B">The quality</h3>
+						<p data-i18n="articleContentPC">Users have become very demanding regarding the quality of images. Whether you have photographs, icons, animated pictures or infographies, you should always go for the top quality. Furthermore, be careful with photo editing. They can be a great addition... or a great weakpoint to your website.</p>
+					</section>
+					<footer>
+						<h2 data-i18n="articleConclusionHeadingH2">Conclusion</h2>
+						<p data-i18n="articleConclusionP">
+						An efficient and SEO successful website requires well-chosen images, in regards to the context they fit in, as well as their quality. High-quality photographs, icons and infographies are mandatory.
+						</p>
+					</footer>
+				</article>
+            </div>
+            <section class="tutorialDiv secondaryDiv">
+				<h2 data-i18n="tutorialHeadingH2">How to apply filters on an image?</h2>
+				<p data-i18n="tutorialHeadingPA">Please follow these steps to apply filters.</p>
+				<section>
+					<h3>HTML</h3>
+					<ol>
+						<li data-i18n="tutorialHtmlA">Create a new HTML file.</li>
+						<li data-i18n="tutorialHtmlB">A container with the id 'demoAppImageFilter' wraps the content.</li>
+						<li data-i18n="tutorialHtmlC">An image with id 'demoImgNotFiltered' is included with a dynamic class binding 'selectedFilter'.</li>
+						<li data-i18n="tutorialHtmlD">Buttons trigger the 'applyImageFilter' method with specific filters:</li>
+						<li data-i18n="tutorialHtmlE">'imgFilterBw' for black &amp; white.</li>
+						<li data-i18n="tutorialHtmlF">'imgFilterSepia' for sepia.</li>
+						<li data-i18n="tutorialHtmlG">'imgFilterBlur' for a blur effect.</li>
+					</ol>
+					<pre>
+						<code id="codingHtml" class="hljs html">
+&lt;div id="demoAppImageFilter"&gt;
+	<img id="demoImgNotFiltered" src="[yourImageLocation]" alt="Big Ben" :class="selectedFilter">
+
+	<button type="button" @click="applyImageFilter('imgFilterBw')">Change to Black &amp; White</button>
+	<button type="button" @click="applyImageFilter('imgFilterSepia')">Change to Sepia</button>
+	<button type="button" @click="applyImageFilter('imgFilterBlur')">Change to Blur</button>
+	<button type="button" @click="applyImageFilter('imgFilterReset')">Reset</button>
+&lt;/div&gt;
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>CSS</h3>
+					<ol>
+						<li data-i18n="tutorialCssA">Create a new CSS file.</li>
+						<li data-i18n="tutorialCssB">Styles for the 'imgFilterBw' class apply a grayscale filter of 100% to the image.</li>
+						<li data-i18n="tutorialCssC">Styles for the 'imgFilterSepia' class apply a sepia filter of 100% to the image.</li>
+						<li data-i18n="tutorialCssD">Styles for the 'imgFilterBlur' class apply a blur effect of 5 pixels to the image.</li>
+					</ol>
+					<pre>
+						<code id="codingCss">
+.imgFilterBw {
+	filter: grayscale(100%);
+}
+
+.imgFilterSepia {
+	filter: sepia(100%);
+}
+
+.imgFilterBlur {
+	filter: blur(5px);
+}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Vue.Js</h3>
+					<ol>
+						<li data-i18n="tutorialJavascriptA">Create a new JavaScript file.</li>
+						<li data-i18n="tutorialJavascriptB">Vue app is created with a data property 'selectedFilter' set to an empty string.</li>
+						<li data-i18n="tutorialJavascriptC">A method, 'applyImageFilter', is defined to update image filters and 'selectedFilter'.</li>
+						<li data-i18n="tutorialJavascriptD">Inside 'applyImageFilter':</li>
+						<li data-i18n="tutorialJavascriptE">Existing classes on the image are cleared.</li>
+						<li data-i18n="tutorialJavascriptF">'responsiveImg' class is added for basic styling.</li>
+						<li data-i18n="tutorialJavascriptG">The specified filter class is added for image effects.</li>
+						<li data-i18n="tutorialJavascriptH">'selectedFilter' is updated with the current filter.</li>
+						<li data-i18n="tutorialJavascriptI">The Vue app is mounted to the HTML element with the id 'demoAppImageFilter'.</li>
+					</ol>
+					<pre>
+						<code id="codingJs">
+const app = Vue.createApp({
+	data() {
+		return {
+			selectedFilter: ''
+		};
+	},
+	methods: {
+		applyImageFilter(filter) {
+			const imgElement = document.getElementById('imgNotFiltered');
+
+			imgElement.className = '';
+
+			imgElement.classList.add('responsiveImg');
+			imgElement.classList.add(filter);
+
+			this.selectedFilter = filter;
+		}
+	}
+});
+app.mount('#demoAppImageFilter');
+							</code>
+						</pre>
+				</section>
+
+            </section>
+			<section class="primaryDiv demoDiv">
+				<h3 data-i18n="tutorialLiveDemoHeading">Live demo</h3>
+				<p data-i18n="tutorialLiveDemoContent">Change the image effects by clicking the buttons below</p>
+				<div id="appImageFilter">
+					<picture>
+					<source media="(max-width: 600px)" srcset="../img/smartphone/bigBen.jpg">
+
+					<!-- Source for screens with a width greater than 600 pixels but less than or equal to 1200 pixels -->
+					<source media="(min-width: 601px) and (max-width: 1200px)" srcset="../img/tablet/bigBen.jpg">
+
+					<!-- Default source for screens with a width greater than 1200 pixels -->
+					<source srcset="../img/desktop/bigBen.jpg">
+
+					<!-- Fallback image for browsers that do not support the <picture> element -->
+					<img id="imgNotFiltered" src="../img/desktop/bigBen.jpg" alt="Big Ben" :class="responsiveImg + ' ' + selectedFilter">
+					</picture>
+
+					<div class="btnGroup">
+						<button type="button" class="ctaButton" @click="applyImageFilter('imgFilterBw')">Black &amp; White</button>
+						<button type="button" class="ctaButton" @click="applyImageFilter('imgFilterSepia')">Sepia</button>
+						<button type="button" class="ctaButton" @click="applyImageFilter('imgFilterBlur')">Blur</button>
+						<button type="button" class="ctaButton" @click="applyImageFilter('imgFilterReset')">Reset</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="appChangeLanguage">
+			<footer>
+				<p data-i18n="footerP">&copy; Codify made by FERREIRA Steven, MILESI Cesar &amp; FURRER Esther</p>
+				<div class="languageSelector">
+					<label :for="language" data-i18n="footerLabel">Choose your language of preference:</label>
+					<select class="customSelect" v-model="selectedLanguage" @change="fetchJsonContent('images')">
+						<option data-i18n="footerLang1" value="en">English</option>
+						<option data-i18n="footerLang2" value="fr">French</option>
+					</select>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- All page that uses our global web components have to follow this order -->
+	<script src="../js/vue3.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	<script src="../js/languageSwitcher.js"></script>
+	<script src="../js/burgerMenu.js"></script>
+	<script src="../js/darkThemeSwitcher.js"></script>
+	<script src="../js/syntaxHighlighter.js"></script>
+
+	<!-- specific JavaScript code for the demo purpose -->
+	<script src="../js/demo/images.js"></script>
+</body>
+</html>

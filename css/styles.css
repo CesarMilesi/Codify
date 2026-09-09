@@ -1,0 +1,226 @@
+body {
+	margin: 0;
+    padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;	
+}
+
+.navLinks li a{
+    margin: 0 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 100px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container>header, main, .container>footer {
+	border-radius: 10px;
+}
+
+.headerInfo {
+    display: flex;
+    flex-direction: column; /* Stack the divs vertically */
+    align-items: flex-start; /* Align items to the start of each row */
+    margin-bottom: 10px; 
+}
+
+.HeaderAuthorInfo, .headerLastUpdated {
+    display: flex;
+    align-items: center; /* Align items vertically in each row */
+}
+
+.HeaderAuthorInfo p {
+    margin: 0;
+	padding-right: 5px;
+}
+
+.headerLastUpdated p {
+    margin: 0; /* Remove default margin for paragraphs */
+    padding-right: 5px;
+}
+
+.headerLastUpdated svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+
+label {
+	padding-left: 20px;
+}
+
+.languageSelector {
+    margin: 10px 0 10px 0;
+}
+
+/* Custom styling for select element in the footer*/
+.customSelect {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container>footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.languageSelector {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure proper spacing and styling for icons */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+#appChangeLanguage>footer {
+    padding: 1rem;
+}
+
+select {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.primaryDiv, .secondaryDiv {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto; /* Center the div horizontally */
+}
+
+.quoteDiv, .articleDiv, .tutorialDiv {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.quoteDiv {
+    padding: 1rem;
+}
+
+blockquote:before {
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+.ctaButton {
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.ctaButtonLink {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1:2 ratio for left and right columns */
+    gap: 20px;
+}
+
+.tutorialHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorialDiv pre {
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    margin: 0;
+}
+
+.alignJustify{
+    text-align: justify;
+}
+
+.responsiveImg {
+	max-width: 100%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    body{
+        padding: 0;
+        margin:0;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    main {
+        max-width: 100%;      
+    }
+
+    .quoteDiv, .articleDiv, .tutorialDiv, .demoDiv {
+        margin: 10px;
+    }
+
+    .primaryDiv {
+        padding: 10px;
+    }
+
+    .quoteDiv blockquote {
+        margin: 10px;
+    }
+
+    .tutorialDiv pre {
+        white-space: pre-line; /* Break long lines of code */
+        padding: 0;
+        word-break: break-all;
+    }
+}

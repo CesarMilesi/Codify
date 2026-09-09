@@ -1,0 +1,15 @@
+{
+        "en": {
+          "demoLiveSectionH3": "Live demo",
+          "demoLiveSectionLabel": "Translate to french",
+          "demoFooterLang1": "English",
+          "demoFooterLang2": "French"
+        },
+        "fr": {
+          "demoLiveSectionH3": "Démo",
+          "demoLiveSectionLabel": "Traduis en anglais",
+          "demoFooterLang1": "Anglais",
+          "demoFooterLang2": "Français"
+        }
+}
+
