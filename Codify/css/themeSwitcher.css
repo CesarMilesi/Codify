@@ -1,0 +1,54 @@
+/*Dark theme colors*/
+:root.darkTheme {
+	--primaryColor: #E0C2FF; /* Lighter Purple */
+	--secondaryColor: #CC85FF; /* Lighter Purple 2 */
+	--primaryBackground: #333333; /* Darker Gray */
+
+	--primaryTextColor: #FFF; /* White */
+	--primaryEmphasizeColor: #B8B8B8; /* Lighter Gray */
+	--primaryInvertedTextColor: #000; /* Black */
+	
+	--bgSecondaryRgb: 204, 133, 255; /* RGB values */
+	--bgSecondaryInvertedRgb: 0, 0, 0; /* RGB values */
+    --bgOpacityRgb: 0.2;
+
+	--bgSyntaxHighlight: #1A1B26; /* Darker Gray */
+
+	--gradientColorFirst: #7028e4;	/* Lighter pink */
+	--gradientColorSecond: #e5b2ca; /* Lighter blue */	
+}
+
+/*Light theme colors*/
+:root {
+	--primaryColor: #8400BD; /* Darker Purple */
+	--secondaryColor: #60008A; /* Darker Purple 2 */
+	--primaryBackground: #F1F1F1; /* Lighter Gray */
+
+	--primaryTextColor: #000; /* Black */
+	--primaryEmphasizeColor: #555; /* DarkerGray */
+	--primaryInvertedTextColor: #FFF; /* White */
+	
+	--bgSecondaryRgb: 184, 104, 218; /* RGB values */
+	--bgSecondaryInvertedRgb: 255, 255, 255; /* RGB values */
+    --bgOpacityRgb: 0.4;
+
+	--bgSyntaxHighlight: #F6F6F6; /* Darker Gray */
+
+	--gradientColorFirst: #fbc2eb;	/* Lighter pink */
+	--gradientColorSecond: #a6c1ee; /* Lighter blue */
+}
+
+#darkModeToggle {
+    align-items: center;
+    border: none;
+    background-color: var(--primaryBackground);
+}
+
+#navContainerDemo {
+	border-color: var(--primaryTextColor);
+	background-color: var(--primaryBackground);
+}
+
+.navElementDemo a {
+	color: var(--primaryTextColor);
+}

@@ -1,0 +1,29 @@
+.demoFlex {
+    display: flex;
+}
+
+.primaryDivDemo {
+    padding: 20px;
+    margin-bottom: 20px;
+	border: 5px solid transparent;
+	border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    background: 
+		linear-gradient(#F1F1F1 
+			0 0) padding-box,
+		linear-gradient(to right, #8400BD, 
+        #60008A) border-box;
+}
+
+#darkModeToggleDemo {
+    border: none;
+    align-self: flex-start;
+}
+
+.demoText {
+    padding: 50px;
+    margin: auto;
+    border-radius: 8px;
+    color: black;
+}
